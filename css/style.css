@@ -12043,6 +12043,34 @@ h5,
   font-size: 24px;
   text-transform: uppercase;
 }
+/* Ensure the navbar toggler is visible in scrolled state */
+@media (max-width: 991.98px) {
+  .ftco-navbar-light.scrolled .navbar-toggler {
+    color: #fff !important; /* Keep it visible on scroll */
+    display: block; /* Ensure it is displayed */
+  }
+
+  .ftco-navbar-light.scrolled {
+    background: #000 !important; /* Background for scrolled state */
+    padding: 0 15px; /* Ensure there's padding */
+  }
+
+  .ftco-navbar-light.scrolled .nav-link {
+    color: #fff !important; /* Adjust link color for visibility */
+  }
+
+  .ftco-navbar-light.scrolled .navbar-brand {
+    color: #fff; /* Keep brand visible */
+  }
+}
+
+/* Default styles for mobile view */
+@media (max-width: 991.98px) {
+  .ftco-navbar-light .navbar-toggler {
+    color: #fff; /* Default color */
+  }
+}
+
 
 .hero h3.vr {
   -webkit-writing-mode: vertical-lr;
