@@ -3,10 +3,12 @@
 
 <head>
 	<title>Devaraj</title>
+	<link rel="icon" href="images/Devaraj.png" type="image/x-icon">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -18,12 +20,12 @@
 	<link rel="stylesheet" href="css/aos.css">
 
 	<link rel="stylesheet" href="css/ionicons.min.css">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 
 </head>
 
@@ -52,57 +54,20 @@
 			</div>
 		</div>
 	</nav>
-	<section id="home-section" class="hero">
-		<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/Devaraj.png);">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate"
-						data-scrollax=" properties: { translateY: '50%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">This is <span>Devaraj</span></h1>
-								<h2 class="mb-4">Full Stack Developer</h2>
-								<p><a href="mailto:devarajwebdev@gmail.com" class="btn btn-primary py-3 px-4">Hire
-										me</a> <a href="#projects-section"
-										class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/Devaraj.png);">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate"
-						data-scrollax=" properties: { translateY: '50%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm a <span>Certified Python Developer</span>
-								</h1>
-								<p><a href="mailto:devarajwebdev@gmail.com" class="btn btn-primary py-3 px-4">Hire
-										me</a> <a href="#projects-section"
-										class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<section id="home" class="portfolio-home-section">
+        <div class="portfolio-content" data-aos="fade-up">
+            <p>Hello!</p>
+            <h2>This is <span>Devaraj</span></h2>
+            <h1>I’m a <span>Certified Full Stack Developer</span></h1>
+            <div class="portfolio-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="mailto:devarajwebdev@gmail.com" class="portfolio-btn">Hire Me</a>
+                <a href="#projects-section" class="portfolio-btn-secondary">My Works</a>
+            </div>
+        </div>
+        <div class="portfolio-image-container" data-aos="zoom-in" data-aos-delay="300">
+            <img src="images/Devaraj.png" alt="Devaraj" class="portfolio-profile-pic">
+        </div>
+    </section>
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
@@ -796,7 +761,7 @@
 				</div>
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<h2 class="ftco-heading-2">Contact</h2>
 						<div class="block-23 mb-3">
 							<ul>
 								<li><span class="icon icon-map-marker"></span><span class="text">Sakthi Nagar, 4th corss
@@ -876,7 +841,7 @@
 				});
 		});
 	</script>
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>

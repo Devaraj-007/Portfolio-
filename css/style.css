@@ -14000,3 +14000,172 @@ li.d-flex .num a:hover {
 .text {
   text-align: justify;
 }
+
+
+/* ----------custom css---------- */
+
+.portfolio-home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+  height: 100vh;
+}
+
+/* Adjust text content */
+.portfolio-content {
+  max-width: 40%;
+  text-align: left;
+  top: 50%;
+  left: 80%;
+  transform: translate(-0%, -27%);
+  z-index: 2;
+  width: 90%;
+  font-family: 'Poppins', 'Arial', sans-serif; /* Primary font Poppins, fallback to Arial */
+  font-weight: 700; /* Set font weight to bold */
+}
+
+.portfolio-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-family: 'Poppins', 'Arial', sans-serif; /* Primary font Poppins, fallback to Arial */
+  font-weight: 700; /* Set font weight to bold */
+}
+
+.portfolio-content h1 span {
+  color: #f4b400;
+}
+
+.portfolio-buttons {
+  margin-top: 2rem;
+}
+
+.portfolio-btn {
+  background-color: #f4b400;
+  padding: 0.8rem 2rem; /* Same padding for both buttons */
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  margin: 0 0.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition for scaling and color */
+}
+
+.portfolio-btn:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+  background-color: #e0a300; /* Darken background color on hover */
+}
+
+.portfolio-btn-secondary {
+  background-color: transparent;
+  border: 2px solid #fff; /* Keep border same thickness */
+  color: #fff;
+  border-radius: 30px;
+  padding: 0.8rem 2rem; /* Same padding for consistency */
+  cursor: pointer; /* Add cursor pointer for consistency */
+  text-decoration: none; /* Ensure no underline */
+  margin: 0 0.5rem; /* Same margin as primary button */
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Add transition for scaling and border color */
+}
+
+.portfolio-btn-secondary:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+  border-color: #f4b400; /* Change border color on hover */
+}
+
+
+/* Image Container */
+.portfolio-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-profile-pic {
+  width: 700px;  /* Increase size for desktop */
+  max-width: 100%;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  margin-top: -70px;
+}
+
+.portfolio-profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-home-section {
+    position: relative;
+    flex-direction: column;
+    padding: 0rem;
+    text-align: center; /* Center align content in mobile */
+  }
+
+  .portfolio-content {
+    position: relative;
+    top: 91px;
+    left: -117px;
+    transform: translate(0, 0);
+    z-index: 2;
+    text-align: left;
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .portfolio-content h1 {
+    font-size: 2.5rem;
+    text-align: left; /* Left align heading */
+  }
+
+  .portfolio-buttons {
+    display: flex;
+    justify-content: center; /* Center align buttons */
+    margin-top: 2rem; /* Add space between buttons and content */
+    margin-right: -7rem;
+    font-size: 0.9rem;
+  }
+
+  .portfolio-btn {
+    margin: 10px 0; /* Vertical margin for space around buttons */
+    padding: 0.5rem 1rem; /* Add padding for better touch targets */
+}
+
+.portfolio-btn-secondary {
+    margin: 10px 22px; /* Apply the same vertical margin */
+    padding: 0.5rem 1rem; /* Consistent padding */
+}
+
+  .portfolio-image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .portfolio-profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    margin-top: 4px;
+  }
+
+  .portfolio-nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-menu-icon {
+    display: block;
+  }
+
+  .portfolio-navbar.active .portfolio-nav-links {
+    display: flex;
+  }
+}

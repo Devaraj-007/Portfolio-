@@ -275,3 +275,36 @@
 
 })(jQuery);
 
+AOS.init({
+	duration: 1000,
+	easing: 'ease-in-out',
+	once: true,
+  });
+  
+  // Toggle Navbar on Mobile
+  const menuIcon = document.querySelector('.portfolio-menu-icon');
+  const navbar = document.querySelector('.portfolio-navbar');
+  
+  menuIcon.addEventListener('click', () => {
+	navbar.classList.toggle('active');
+  });
+  
+  // Smooth scroll for navigation links
+  document.querySelectorAll('.portfolio-navbar a').forEach(anchor => {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault();
+		const target = document.querySelector(this.getAttribute('href'));
+		target && target.scrollIntoView({ behavior: 'smooth' });
+	});
+  });
+
+  // Smooth scroll for specific navigation links
+document.querySelectorAll('.portfolio-btn, .portfolio-nav-links a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
